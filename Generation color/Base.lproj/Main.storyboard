@@ -135,7 +135,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueSliderView" destination="HB3-eG-BWt" id="EhV-PK-A2e"/>
                         <outlet property="displayColorView" destination="XGX-PR-P8p" id="Axg-rf-JE6"/>
+                        <outlet property="greenSliderView" destination="smI-Tz-Cv2" id="ol0-0M-1MX"/>
+                        <outlet property="redSliderView" destination="cGe-Dc-qWe" id="3xD-km-eGe"/>
                         <outlet property="volumBlueColorLabel" destination="IVA-zO-ADz" id="MyT-s9-5bB"/>
                         <outlet property="volumGreenColorLabel" destination="iyc-HW-wSH" id="cG3-t4-j3O"/>
                         <outlet property="volumRedColorLabel" destination="vzD-Aq-4RV" id="O1o-S1-WYR"/>
