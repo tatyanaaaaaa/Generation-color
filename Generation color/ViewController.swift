@@ -21,10 +21,6 @@ final class ViewController: UIViewController {
     @IBOutlet weak private var greenSliderView: UISlider!
     @IBOutlet weak private var blueSliderView: UISlider!
     
-    private var redValue: Float = 0
-    private var greenValue: Float = 0
-    private var blueValue: Float = 0
-    
     // MARK: - Internal func
     
     override func viewDidLoad() {
@@ -35,27 +31,12 @@ final class ViewController: UIViewController {
     
     // MARK: - Private func
     
-    @IBAction private func redSliderAction(_ sender: UISlider) {
-        redValue = sender.value
-        updateContent()
-    }
-    
-    @IBAction private func greenSliderAction(_ sender: UISlider) {
-        greenValue = sender.value
-        updateContent()
-    }
-    
-    @IBAction private func blueSliderAction(_ sender: UISlider) {
-        blueValue = sender.value
+    @IBAction func sliderAction() {
         updateContent()
     }
     
     private func setDefaultSettings(redValue: Float, greenValue: Float, blueValue: Float) {
         displayColorView.layer.cornerRadius = 16
-        
-        self.redValue = redValue
-        self.greenValue = greenValue
-        self.blueValue = blueValue
         
         redSliderView.value = redValue
         greenSliderView.value = greenValue
@@ -65,13 +46,13 @@ final class ViewController: UIViewController {
     }
     
     private func updateContent() {
-        displayColorView.backgroundColor = .init(red: CGFloat(redValue),
-                                                 green: CGFloat(greenValue),
-                                                 blue: CGFloat(blueValue),
+        displayColorView.backgroundColor = .init(red: CGFloat(redSliderView.value),
+                                                 green: CGFloat(greenSliderView.value),
+                                                 blue: CGFloat(blueSliderView.value),
                                                  alpha: 1)
         
-        volumRedColorLabel.text = String(format: "%.2f", redValue)
-        volumGreenColorLabel.text = String(format: "%.2f", greenValue)
-        volumBlueColorLabel.text = String(format: "%.2f", blueValue)
+        volumRedColorLabel.text = String(format: "%.2f", redSliderView.value)
+        volumGreenColorLabel.text = String(format: "%.2f", greenSliderView.value)
+        volumBlueColorLabel.text = String(format: "%.2f", blueSliderView.value)
     }
 }

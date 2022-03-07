@@ -44,12 +44,12 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cGe-Dc-qWe" userLabel="Red color Slider">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.69999999999999996" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cGe-Dc-qWe" userLabel="Red color Slider">
                                         <rect key="frame" x="114" y="0.0" width="270" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                         <color key="thumbTintColor" systemColor="systemRedColor"/>
                                         <connections>
-                                            <action selector="redSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="qtM-aL-a60"/>
+                                            <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="mkW-P0-8HN"/>
                                         </connections>
                                     </slider>
                                 </subviews>
@@ -75,12 +75,12 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="smI-Tz-Cv2" userLabel="Green color slider">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="smI-Tz-Cv2" userLabel="Green color slider">
                                         <rect key="frame" x="114" y="0.0" width="270" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                         <color key="thumbTintColor" systemColor="systemGreenColor"/>
                                         <connections>
-                                            <action selector="greenSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZG8-nm-sno"/>
+                                            <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="CTb-O8-Ugs"/>
                                         </connections>
                                     </slider>
                                 </subviews>
@@ -111,7 +111,7 @@
                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                         <color key="thumbTintColor" systemColor="systemBlueColor"/>
                                         <connections>
-                                            <action selector="blueSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="pa3-3a-YdS"/>
+                                            <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="0bb-yc-rdZ"/>
                                         </connections>
                                     </slider>
                                 </subviews>
